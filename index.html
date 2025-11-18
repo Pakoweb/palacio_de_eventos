@@ -1,107 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Palacio de Eventos</title>
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palacio de Eventos - Inicio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="header">
-        <div class="container header-inner">
-            <h1 class="brand">Palacio de Eventos</h1>
-            <nav class="main-nav" aria-label="Navegación principal">
-                <a href="/HTML/InformacionGeneral.html">INFORMACIÓN GENERAL</a>
-                <a href="/HTML/Reservas.html" class="active">RESERVAS</a>
-                <a href="/HTML/Galeria.html">GALERÍA</a> 
-            </nav>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M30,70 L30,45 L50,30 L70,45 L70,70 Z' fill='none' stroke='white' stroke-width='3'/%3E%3Crect x='45' y='55' width='10' height='15' fill='white'/%3E%3Ctext x='50' y='90' font-family='Arial' font-size='12' fill='white' text-anchor='middle'%3EPALACIO DE%3C/text%3E%3Ctext x='50' y='98' font-family='Arial' font-size='8' fill='white' text-anchor='middle'%3EEVENTOS%3C/text%3E%3C/svg%3E" alt="Logo">
+                <span class="logo-text">Palacio de Eventos</span>
+            </div>
+            <a href="/HTML/login.html" class="user-menu">
+                <span>👤</span>
+                <span>☰</span>
+            </a>
         </div>
     </header>
 
+     <nav>
+       <div class="nav-container">
+            <a href="index.html">PÁGINA PRINCIPAL</a>
+            <a href="/HTML/InformacionGeneral.html">INFORMACIÓN GENERAL</a>
+            <a href="/HTML/Reservas.html">RESERVAS</a>
+            <a href="/HTML/Galeria.html">GALERÍA</a>
+        </div>
+    </nav>
 
-    <main>
+    <main class="main-container">
         <section class="hero">
-            <div class="container">
-                <div class="hero-grid">
-                    <div>
-                        <h2>Cuatro espacios únicos para celebrar momentos inolvidables</h2>
-                        <p class="lead">Descubre nuestras salas diseñadas para conferencias, bodas, conciertos y mucho
-                            más. Elige tu sala, comprueba la capacidad y solicita una reserva.</p>
-                        <p><a href="#reservas" class="btn">Reserva aquí</a></p>
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1505765055319-3c8c3b3d3f5b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
-                        alt="Salón de eventos" class="hero-img">
+            <h1>Bienvenido al Palacio de Eventos</h1>
+            <h2>Cuatro espacios únicos para celebrar momentos inolvidables</h2>
+            <div class="hero-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 400'%3E%3Crect fill='%23e8e8e8' width='1000' height='400'/%3E%3Ctext x='500' y='200' font-family='Arial' font-size='24' fill='%23999' text-anchor='middle'%3EImagen aérea del Palacio de Eventos%3C/text%3E%3C/svg%3E" alt="Vista aérea">
+            </div>
+        </section>
+
+        <section class="description">
+            <p>Descubre nuestras salas diseñadas para todo tipo de eventos:<br>
+            conferencias, exposiciones, bodas, conciertos y mucho más.</p>
+        </section>
+
+        <section class="salas-grid">
+            <div class="sala-card">
+                <a href="/HTML/SalaJardin.html">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23b8d4a8' width='400' height='300'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' fill='%23145214' text-anchor='middle'%3ESala Jardín%3C/text%3E%3C/svg%3E" alt="Sala Jardín">
+                    <h3>Sala Jardín</h3>
+                </a>
+            </div>
+
+            <div class="sala-card">
+                <a href="/HTML/SalaReal.html">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23f4e4c1' width='400' height='300'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' fill='%23145214' text-anchor='middle'%3ESala Real%3C/text%3E%3C/svg%3E" alt="Sala Real">
+                    <h3>Sala Real</h3>
+                </a>
+            </div>
+
+            <div class="sala-card">
+                <a href="/HTML/SalaModernista.html">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23e8a878' width='400' height='300'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' fill='%23145214' text-anchor='middle'%3ESala Modernista%3C/text%3E%3C/svg%3E" alt="Sala Modernista">
+                    <h3>Sala Modernista</h3>
+                </a>
+            </div>
+
+            <div class="sala-card">
+                <a href="/HTML/SalaEscenica.html">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23d8d8d8' width='400' height='300'/%3E%3Ctext x='200' y='150' font-family='Arial' font-size='18' fill='%23145214' text-anchor='middle'%3ESala Escénica%3C/text%3E%3C/svg%3E" alt="Sala Escénica">
+                    <h3>Sala Escénica</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>📍 Dirección:</h3>
+                <p>Palacio de Eventos<br>
+                Calle Ejemplo 123, Sevilla España</p>
+            </div>
+            <div class="footer-section">
+                <h3>📞 Teléfono:</h3>
+                <p>+34 123 456 789</p>
+                <h3 style="margin-top: 15px;">✉️ Correo electrónico:</h3>
+                <p>info@palaciodeeventos.com</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-map">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 150'%3E%3Crect fill='%23a8d5ba' width='300' height='150'/%3E%3Ccircle cx='150' cy='75' r='10' fill='%23145214'/%3E%3Ctext x='150' y='100' font-family='Arial' font-size='12' fill='%23145214' text-anchor='middle'%3ESevilla%3C/text%3E%3C/svg%3E" alt="Mapa">
                 </div>
             </div>
-        </section>
-
-
-        <section id="galeria" class="container section">
-            <h3 class="section-title">Nuestros espacios</h3>
-            <div class="cards">
-                <!-- Sala Jardín -->
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
-                        alt="Sala Jardín">
-                    <div class="card-body">
-                        <h4>Sala Jardín</h4>
-                        <p>Perfecta para bodas y grandes celebraciones. Capacidad hasta 450 personas.</p>
-                        <div class="meta">Capacidad: <strong>450</strong></div>
-                        <a href="#reservas" class="btn btn-sm">Reservar</a>
-                    </div>
-                </article>
-
-
-                <!-- Sala Real -->
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
-                        alt="Sala Real">
-                    <div class="card-body">
-                        <h4>Sala Real</h4>
-                        <p>Sala grande de 320 m² para banquetes, congresos y desfiles. Capacidad 200 personas.</p>
-                        <div class="meta">Capacidad: <strong>200</strong></div>
-                        <a href="#reservas" class="btn btn-sm">Reservar</a>
-                    </div>
-                </article>
-
-
-                <!-- Sala Modernista -->
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1487014593241-503a912264b7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
-                        alt="Sala Modernista">
-                    <div class="card-body">
-                        <h4>Sala Modernista</h4>
-                        <p>Espacio moderno para conferencias y talleres. Capacidad hasta 50 personas.</p>
-                        <div class="meta">Capacidad: <strong>50</strong></div>
-                        <a href="#reservas" class="btn btn-sm">Reservar</a>
-                    </div>
-                </article>
-
-
-                <!-- Sala Escénica -->
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1542317854-0b6f4d6a1c23?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
-                        alt="Sala Escénica">
-                    <div class="card-body">
-                        <h4>Sala Escénica</h4>
-                        <p>Perfecta para reuniones íntimas y sesiones privadas. Capacidad hasta 30 personas.</p>
-                        <div class="meta">Capacidad: <strong>30</strong></div>
-                        <a href="#reservas" class="btn btn-sm">Reservar</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-
-        <section id="reservas" class="container section form-section">
-            <h3 class="section-title">Reserva tu espacio</h3>
-            <form class="reserva-form" action="#" method="post" onsubmit="event.preventDefault(); showSuccess();">
-                <fieldset>
-                    <legend>Datos personales</legend>
-                    <label>Nombre completo
-                        <input type="text" name="nombre" required>
-                    </label>
-
+        </div>
+    </footer>
+</body>
 </html>
