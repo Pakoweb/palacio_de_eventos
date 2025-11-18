@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Palacio de Eventos</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <h1 class="brand">Palacio de Eventos</h1>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="/HTML/InformacionGeneral.html">INFORMACIÓN GENERAL</a>
+                <a href="/HTML/Reservas.html" class="active">RESERVAS</a>
+                <a href="/HTML/Galeria.html">GALERÍA</a> 
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <h2>Cuatro espacios únicos para celebrar momentos inolvidables</h2>
+                        <p class="lead">Descubre nuestras salas diseñadas para conferencias, bodas, conciertos y mucho
+                            más. Elige tu sala, comprueba la capacidad y solicita una reserva.</p>
+                        <p><a href="#reservas" class="btn">Reserva aquí</a></p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1505765055319-3c8c3b3d3f5b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+                        alt="Salón de eventos" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="galeria" class="container section">
+            <h3 class="section-title">Nuestros espacios</h3>
+            <div class="cards">
+                <!-- Sala Jardín -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+                        alt="Sala Jardín">
+                    <div class="card-body">
+                        <h4>Sala Jardín</h4>
+                        <p>Perfecta para bodas y grandes celebraciones. Capacidad hasta 450 personas.</p>
+                        <div class="meta">Capacidad: <strong>450</strong></div>
+                        <a href="#reservas" class="btn btn-sm">Reservar</a>
+                    </div>
+                </article>
+
+
+                <!-- Sala Real -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+                        alt="Sala Real">
+                    <div class="card-body">
+                        <h4>Sala Real</h4>
+                        <p>Sala grande de 320 m² para banquetes, congresos y desfiles. Capacidad 200 personas.</p>
+                        <div class="meta">Capacidad: <strong>200</strong></div>
+                        <a href="#reservas" class="btn btn-sm">Reservar</a>
+                    </div>
+                </article>
+
+
+                <!-- Sala Modernista -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1487014593241-503a912264b7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+                        alt="Sala Modernista">
+                    <div class="card-body">
+                        <h4>Sala Modernista</h4>
+                        <p>Espacio moderno para conferencias y talleres. Capacidad hasta 50 personas.</p>
+                        <div class="meta">Capacidad: <strong>50</strong></div>
+                        <a href="#reservas" class="btn btn-sm">Reservar</a>
+                    </div>
+                </article>
+
+
+                <!-- Sala Escénica -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1542317854-0b6f4d6a1c23?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+                        alt="Sala Escénica">
+                    <div class="card-body">
+                        <h4>Sala Escénica</h4>
+                        <p>Perfecta para reuniones íntimas y sesiones privadas. Capacidad hasta 30 personas.</p>
+                        <div class="meta">Capacidad: <strong>30</strong></div>
+                        <a href="#reservas" class="btn btn-sm">Reservar</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="reservas" class="container section form-section">
+            <h3 class="section-title">Reserva tu espacio</h3>
+            <form class="reserva-form" action="#" method="post" onsubmit="event.preventDefault(); showSuccess();">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label>Nombre completo
+                        <input type="text" name="nombre" required>
+                    </label>
+
+</html>
