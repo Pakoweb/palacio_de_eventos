@@ -11,14 +11,16 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #FFFFFF;
+     padding-top: 150px;
 }
 
 /* Header */
 header {
     background-color: #145214;
     padding: 15px 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -70,6 +72,10 @@ header {
 nav {
     background-color: #A8D5BA;
     padding: 12px 0;
+    position: fixed;
+    top: 87px;
+    width: 100%;
+    z-index: 999;
 }
 
 .nav-container {
@@ -199,21 +205,21 @@ nav a.active {
 .eventos-section h2 {
     text-align: center;
     font-size: 32px;
-    color: #145214;
+    color: #0c0c0c;
     margin-bottom: 40px;
     font-weight: 700;
 }
 
-.eventos-category {
+.eventos-categoria {
     margin-bottom: 50px;
 }
 
-.eventos-category h3 {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 30px;
-    font-weight: 600;
+.eventos-categoria h3 {
+    text-align:center;
+    font-size: 18px;
+    margin-bottom: 5%;
+    color: #0c0c0c;
+    
 }
 
 .eventos-gallery {
@@ -231,13 +237,15 @@ nav a.active {
 }
 
 /* CTA */
-.cta-text {
+.cta-text{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-style: italic;
-    color: #333;
+    color: #0c0c0c;
+    font-weight: 700;
     margin-top: 50px;
 }
+
 
 /* Página de sala individual */
 .sala-header {
