@@ -6,29 +6,36 @@
 }
 
 body {
+    /* STICKY FOOTER SETUP: Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana y usa Flexbox */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 12px;
+    /* Base font size en rem (12px = 0.75rem, asumiendo 16px base) */
+    font-size: 0.75rem; 
     line-height: 1.6;
     color: #333;
     background-color: #FFFFFF;
-    padding-top: 150px;
+    /* Mantenemos padding-top en px por la altura fija de los headers */
+    padding-top: 150px; 
 }
 
 /* Header */
 header {
     background-color: #145214;
-    padding: 15px 0;
+    padding: 0.9375rem 0; /* 15px -> 0.9375rem */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 5px -> rem */
 }
 
 .header-container {
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px -> 75rem */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem; /* 20px -> 1.25rem */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,18 +44,18 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem; /* 10px -> 0.625rem */
 }
 
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem; /* 60px -> 3.75rem */
+    height: 3.75rem; /* 60px -> 3.75rem */
     filter: brightness(0) invert(1);
 }
 
 .logo-text {
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px -> 0.875rem */
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -56,12 +63,12 @@ header {
 
 .user-menu {
     background-color: #FFFFFF;
-    padding: 8px 15px;
-    border-radius: 5px;
+    padding: 0.5rem 0.9375rem; /* 8px 15px -> rem */
+    border-radius: 0.3125rem; /* 5px -> rem */
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem; /* 8px -> 0.5rem */
 }
 
 .user-menu:hover {
@@ -71,20 +78,21 @@ header {
 /* Navegación */
 nav {
     background-color: #A8D5BA;
-    padding: 12px 0;
+    padding: 0.75rem 0; /* 12px -> 0.75rem */
     position: fixed;
-    top: 87px;
+    /* top: 87px; -- Mantenemos px ya que depende directamente de la altura del header fijo */
+    top: 87px; 
     width: 100%;
     z-index: 999;
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px -> 75rem */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem; /* 20px -> 1.25rem */
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem; /* 40px -> 2.5rem */
     flex-wrap: wrap;
 }
 
@@ -92,10 +100,10 @@ nav a {
     color: #145214;
     text-decoration: none;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 0.8125rem; /* 13px -> 0.8125rem */
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 8px 15px;
+    padding: 0.5rem 0.9375rem; /* 8px 15px -> rem */
     border-radius: 3px;
     transition: all 0.3s ease;
 }
@@ -107,55 +115,58 @@ nav a:hover {
 
 /* Contenedor principal */
 .main-container {
-    max-width: 1200px;
+    /* STICKY FOOTER COMPLEMENT: Asegura que el contenido principal ocupe todo el espacio sobrante */
+    flex-grow: 1; 
+
+    max-width: 75rem; /* 1200px -> 75rem */
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem; /* 40px 20px -> rem */
 }
 
 /* Seccion principal */
 .principal {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem; /* 60px -> 3.75rem */
 }
 
 .principal h1 {
-    font-size: 48px;
+    font-size: 3rem; /* 48px -> 3rem */
     font-weight: 700;
     color: #145214;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem; /* 15px -> 0.9375rem */
     font-style: italic;
 }
 
 .principal h2 {
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px -> 1.75rem */
     font-weight: 400;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px -> 1.875rem */
     font-style: italic;
 }
 
 .principal-imagen {
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 62.5rem; /* 1000px -> 62.5rem */
+    margin: 0 auto 1.875rem; /* 30px -> 1.875rem */
+    border-radius: 0.625rem; /* 10px -> 0.625rem */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15); /* 4px 10px -> rem */
 }
 
 .principal-imagen img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px -> 0.625rem */
 }
 
 /* Descripción */
 .descripcion {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem; /* 16px -> 1rem */
     line-height: 1.8;
     color: #333;
-    margin-bottom: 50px;
-    max-width: 900px;
+    margin-bottom: 3.125rem; /* 50px -> 3.125rem */
+    max-width: 56.25rem; /* 900px -> 56.25rem */
     margin-left: auto;
     margin-right: auto;
 }
@@ -164,8 +175,8 @@ nav a:hover {
 .salas-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    margin-bottom: 60px;
+    gap: 2.5rem; /* 40px -> 2.5rem */
+    margin-bottom: 3.75rem; /* 60px -> 3.75rem */
 }
 
 .sala-tarjeta {
@@ -174,7 +185,7 @@ nav a:hover {
 }
 
 .sala-tarjeta:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem); /* 5px -> rem */
 }
 
 .sala-tarjeta a {
@@ -183,15 +194,15 @@ nav a:hover {
 
 .sala-tarjeta img {
     width: 100%;
-    height: 300px;
+    height: 18.75rem; /* 300px -> 18.75rem */
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-    margin-bottom: 20px;
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15); /* 3px 8px -> rem */
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .sala-tarjeta h3 {
-    font-size: 22px;
+    font-size: 1.375rem; /* 22px -> 1.375rem */
     color: #145214;
     font-weight: 700;
     font-style: italic;
@@ -199,24 +210,24 @@ nav a:hover {
 
 /* Sección de eventos */
 .eventos-section {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem; /* 60px -> 3.75rem */
 }
 
 .eventos-section h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem; /* 32px -> 2rem */
     color: #0c0c0c;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* 40px -> 2.5rem */
     font-weight: 700;
 }
 
 .eventos-categoria {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem; /* 50px -> 3.125rem */
 }
 
 .eventos-categoria h3 {
     text-align:center;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px -> 1.125rem */
     margin-bottom: 5%;
     color: #0c0c0c;
     
@@ -225,55 +236,55 @@ nav a:hover {
 .eventos-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .eventos-gallery img {
     width: 100%;
-    height: 250px;
+    height: 15.625rem; /* 250px -> 15.625rem */
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15); /* 3px 8px -> rem */
 }
 
 /* CTA */
 .cta-text{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px -> 1.5625rem */
     font-style: italic;
     color: #0c0c0c;
     font-weight: 700;
-    margin-top: 50px;
+    margin-top: 3.125rem; /* 50px -> 3.125rem */
 }
 
 
 /* Página de sala individual */
 .sala-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* 40px -> 2.5rem */
 }
 
 .sala-header h1 {
-    font-size: 42px;
+    font-size: 2.625rem; /* 42px -> 2.625rem */
     color: #145214;
     font-weight: 700;
     font-style: italic;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px -> 1.875rem */
 }
 
 .sala-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-bottom: 40px;
+    gap: 0.9375rem; /* 15px -> 0.9375rem */
+    margin-bottom: 2.5rem; /* 40px -> 2.5rem */
 }
 
 .sala-images img {
     width: 100%;
-    height: 250px;
+    height: 15.625rem; /* 250px -> 15.625rem */
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15); /* 3px 8px -> rem */
 }
 
 .reserva-centro {
@@ -284,38 +295,38 @@ nav a:hover {
     display: inline-block;
     background-color: #145214;
     color: #FFFFFF;
-    padding: 15px 40px;
-    border-radius: 25px;
+    padding: 0.9375rem 2.5rem; /* 15px 40px -> rem */
+    border-radius: 1.5625rem; /* 25px -> rem */
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem; /* 16px -> 1rem */
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    margin: 30px 0;
+    margin: 1.875rem 0; /* 30px -> 1.875rem */
 }
 
 .reserva-button:hover {
     background-color: #0d3a0d;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(20, 82, 20, 0.3);
+    transform: translateY(-0.125rem); /* 2px -> rem */
+    box-shadow: 0 0.3125rem 0.9375rem rgba(20, 82, 20, 0.3); /* 5px 15px -> rem */
 }
 
 /* Información de sala */
 .sala-info {
     background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    padding: 1.875rem; /* 30px -> 1.875rem */
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .info-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 15px 0;
+    gap: 0.9375rem; /* 15px -> 0.9375rem */
+    padding: 0.9375rem 0; /* 15px -> 0.9375rem */
     border-bottom: 1px solid #e0e0e0;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px -> 0.875rem */
 }
 
 .info-item:last-child {
@@ -323,14 +334,15 @@ nav a:hover {
 }
 
 .info-icon {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px -> 1.25rem */
     color: #145214;
 }
 
 .info-label {
     font-weight: 600;
     color: #145214;
-    min-width: 200px;
+    /* Mantenemos un min-width alto para la etiqueta */
+    min-width: 200px; 
 }
 
 .info-value {
@@ -340,71 +352,71 @@ nav a:hover {
 /* Plano de la sala */
 .sala-plano {
     text-align: center;
-    margin: 40px 0;
+    margin: 2.5rem 0; /* 40px -> 2.5rem */
 }
 
 .sala-plano img {
-    max-width: 600px;
+    max-width: 37.5rem; /* 600px -> 37.5rem */
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15); /* 3px 8px -> rem */
 }
 
 /* Formulario de reservas */
 .reservas-container {
-    max-width: 700px;
+    max-width: 43.75rem; /* 700px -> 43.75rem */
     margin: 0 auto;
 }
 
 .reservas-container h1 {
     text-align: center;
-    font-size: 38px;
+    font-size: 2.375rem; /* 38px -> 2.375rem */
     color: #145214;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
     font-style: italic;
 }
 
 .reservas-intro {
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px -> 0.875rem */
     color: #666;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* 40px -> 2.5rem */
 }
 
 .form-section {
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem; /* 35px -> 2.1875rem */
 }
 
 .form-section h2 {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px -> 1.125rem */
     font-weight: 700;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
     text-transform: uppercase;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .form-group label {
     display: block;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px -> 0.875rem */
     font-weight: 600;
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem; /* 8px -> 0.5rem */
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 0.75rem 0.9375rem; /* 12px 15px -> rem */
     border: none;
     background-color: #A8D5BA;
-    border-radius: 25px;
-    font-size: 14px;
+    border-radius: 1.5625rem; /* 25px -> rem */
+    font-size: 0.875rem; /* 14px -> 0.875rem */
     font-family: 'Open Sans', Arial, sans-serif;
     color: #333;
 }
@@ -417,20 +429,20 @@ nav a:hover {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 80px;
-    border-radius: 15px;
+    min-height: 5rem; /* 80px -> 5rem */
+    border-radius: 0.9375rem; /* 15px -> rem */
 }
 
 .submit-button {
     display: block;
-    width: 200px;
-    margin: 40px auto 0;
+    width: 12.5rem; /* 200px -> 12.5rem */
+    margin: 2.5rem auto 0; /* 40px -> 2.5rem */
     background-color: #A8D5BA;
     color: #333;
-    padding: 15px 40px;
+    padding: 0.9375rem 2.5rem; /* 15px 40px -> rem */
     border: none;
-    border-radius: 25px;
-    font-size: 16px;
+    border-radius: 1.5625rem; /* 25px -> rem */
+    font-size: 1rem; /* 16px -> 1rem */
     font-weight: 700;
     text-transform: capitalize;
     cursor: pointer;
@@ -440,38 +452,38 @@ nav a:hover {
 .submit-button:hover {
     background-color: #145214;
     color: #FFFFFF;
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem); /* 2px -> rem */
 }
 
 /* Login */
 .login-container {
-    max-width: 400px;
-    margin: 80px auto;
-    padding: 40px;
+    max-width: 25rem; /* 400px -> 25rem */
+    margin: 5rem auto; /* 80px -> 5rem */
+    padding: 2.5rem; /* 40px -> 2.5rem */
     background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem; /* 10px -> 0.625rem */
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1); /* 5px 15px -> rem */
 }
 
 .login-container h1 {
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem; /* 32px -> 2rem */
     color: #145214;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px -> 1.875rem */
 }
 
 .login-form .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
 }
 
 .login-button {
     width: 100%;
     background-color: #145214;
     color: #FFFFFF;
-    padding: 12px;
+    padding: 0.75rem; /* 12px -> 0.75rem */
     border: none;
-    border-radius: 25px;
-    font-size: 16px;
+    border-radius: 1.5625rem; /* 25px -> rem */
+    font-size: 1rem; /* 16px -> 1rem */
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -484,39 +496,39 @@ nav a:hover {
 /* Footer */
 footer {
     background-color: #c0c0c0;
-    padding: 30px 20px;
-    margin-top: 60px;
+    padding: 1.875rem 1.25rem; /* 30px 20px -> rem */
+    margin-top: auto; /* 7. Usa auto para que Flexbox lo empuje hacia abajo */
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px -> 75rem */
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 2.5rem; /* 40px -> 2.5rem */
     align-items: start;
 }
 
 .footer-section h3 {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px -> 0.875rem */
     font-weight: 700;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px -> 0.625rem */
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem; /* 10px -> 0.625rem */
 }
 
 .footer-section p {
-    font-size: 13px;
+    font-size: 0.8125rem; /* 13px -> 0.8125rem */
     color: #333;
     line-height: 1.6;
 }
 
 .footer-map {
     width: 100%;
-    height: 150px;
-    border-radius: 8px;
+    height: 9.375rem; /* 150px -> 9.375rem */
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
     overflow: hidden;
 }
 
@@ -527,15 +539,15 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px -> 48rem */
     .header-container {
         flex-direction: column;
-        gap: 15px;
+        gap: 0.9375rem; /* 15px -> rem */
     }
 
     .nav-container {
         flex-direction: column;
-        gap: 10px;
+        gap: 0.625rem; /* 10px -> rem */
     }
 
     .salas-grid {
@@ -554,20 +566,21 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .hero h1 {
-        font-size: 32px;
+    /* Ajuste de fuentes responsive a rem */
+    .principal h1 {
+        font-size: 2rem; /* 32px -> 2rem */
     }
 
-    .hero h2 {
-        font-size: 20px;
+    .principal h2 {
+        font-size: 1.25rem; /* 20px -> 1.25rem */
     }
 }
 
-/* Prueba desplegable*/
+/* Prueba desplegable - Adaptando unidades a rem */
 .info-item {
-    margin-bottom: 15px;
-    border: 2px solid #145214;
-    border-radius: 8px;
+    margin-bottom: 0.9375rem; /* 15px -> rem */
+    border: 0.125rem solid #145214; /* 2px -> rem */
+    border-radius: 0.5rem; /* 8px -> rem */
     overflow: hidden;
     background-color: white;
 }
@@ -575,61 +588,43 @@ footer {
 .info-header {
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 0.9375rem 1.25rem; /* 15px 20px -> rem */
     background-color: #f8f8f8;
     cursor: pointer;
     transition: background-color 0.3s;
     list-style: none;
 }
 
-.info-header::-webkit-details-marker {
-    display: none;
-}
-
 .info-header::after {
     content: '▼';
     margin-left: auto;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px -> rem */
     color: #145214;
     transition: transform 0.3s;
 }
 
-details[open] .info-header::after {
-    transform: rotate(180deg);
-}
-
-.info-header:hover {
-    background-color: #e8f5e8;
-}
-
 .info-icon {
-    font-size: 24px;
-    margin-right: 15px;
+    font-size: 1.5rem; /* 24px -> rem */
+    margin-right: 0.9375rem; /* 15px -> rem */
 }
 
 .info-label {
     font-weight: 600;
     color: #145214;
-    font-size: 16px;
+    font-size: 1rem; /* 16px -> rem */
 }
 
 .info-content {
-    padding: 20px;
+    padding: 1.25rem; /* 20px -> rem */
     background-color: white;
 }
 
-.info-content p {
-    margin: 0;
-    color: #333;
-    line-height: 1.6;
-}
-
 .info-content ul {
-    margin: 10px 0;
-    padding-left: 20px;
+    margin: 0.625rem 0; /* 10px -> rem */
+    padding-left: 1.25rem; /* 20px -> rem */
 }
 
 .info-content ul li {
-    margin: 8px 0;
+    margin: 0.5rem 0; /* 8px -> rem */
     color: #333;
 }
