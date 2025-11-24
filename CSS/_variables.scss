@@ -1,0 +1,29 @@
+// _variables.scss
+
+//  Colores
+$color-primario: #145214;       // Verde oscuro (Header, Botones principales)
+$color-secundario: #A8D5BA;     // Verde claro (Navegación, Fondo de inputs)
+$color-texto-oscuro: #333;
+$color-fondo-claro: #FFFFFF;
+$color-fondo-gris-claro: #f9f9f9;
+$color-gris-footer: #c0c0c0;
+$color-gris-marco-mapa: #999999;
+$color-gris-claro-hover: #f0f0f0;
+$color-separador-linea: #e0e0e0;
+$color-focus-outline: #0d3a0d;  // Verde oscuro ligeramente más profundo para hover/focus
+
+//  Tamaños (Base 1rem = 10px)
+$espacio-xs: 0.8rem;             // 8px
+$espacio-s: 1.5rem;              // 15px (Header padding)
+$espacio-m: 2rem;               // 20px
+$espacio-l: 4rem;               // 40px
+$altura-header: 8.5rem;          // 85px
+$padding-cuerpo: 15rem;          // 150px (padding-top del body)
+
+// ⏱Transiciones
+$transicion-default: all 0.3s ease;
+$transicion-hover-img: transform 0.3s ease-in-out;
+
+// Tipografía y Efectos
+$fuente-principal: 'Open Sans', Arial, sans-serif;
+$radio-default: 0.8rem;
