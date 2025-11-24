@@ -55,8 +55,8 @@ header {
 
 .logo img {
     /* Nuevo ajuste para el logo */
-    width: 7rem; /* De 5.5rem a 6rem (un poco más ancho) */
-    height: auto; 
+    width: 6rem; /* De 5.5rem a 6rem (un poco más ancho) */
+    height: 5.5rem; /* De 5.2rem a 5.5rem (un poco más alto, pero manteniendo la proporción para el ensanchamiento) */
     filter: brightness(0) invert(1);
 }
 
@@ -351,11 +351,6 @@ nav a:hover {
 
 .info-value {
     color: #333;
-}
-
-.icono {
-    font-size: 1.5rem; /* Esto se traduce a un tamaño de 24px, si la imagen es pequeña, la ajustará. */
-    margin-right: 0.9375rem; /* 15px de margen a la derecha */
 }
 
 /* Plano de la sala */
