@@ -85,6 +85,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -99,8 +100,7 @@ nav a {
     transition: all 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
     background-color: #145214;
     color: #FFFFFF;
 }
@@ -527,11 +527,20 @@ footer {
     .header-container {
         flex-direction: column;
         gap: 15px;
+        flex-wrap: wrap;
     }
 
     .nav-container {
-        flex-direction: column;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;   /* Lo convierte a vertical */
+        align-items: center;      /* Centra los enlaces */
+        width: 100%;              /* Asegura que ocupe todo el ancho */
+        gap: 10px;                /* Separación entre botones */
+    }
+
+    .nav-container a {
+        width: 100%;              /* Los enlaces ocupan todo el ancho */
+        text-align: center;       /* Texto centrado */
     }
 
     .salas-grid {
