@@ -349,6 +349,11 @@ nav a:hover {
     color: #333;
 }
 
+.icono {
+    font-size: 1.5rem; /* Esto se traduce a un tamaño de 24px, si la imagen es pequeña, la ajustará. */
+    margin-right: 0.9375rem; /* 15px de margen a la derecha */
+}
+
 /* Plano de la sala */
 .sala-plano {
     text-align: center;
