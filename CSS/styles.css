@@ -250,6 +250,29 @@ nav a:hover {
     object-fit: cover;
     border-radius: 0.8rem; 
     box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.15); 
+    /* AÑADIR: Transición para un movimiento suave */
+    transition: transform 0.3s ease-in-out; 
+}
+
+.eventos-gallery img:hover {
+    /* AÑADIR: Levanta la imagen ligeramente al pasar el ratón */
+    transform: translateY(-1rem); /* Mueve la imagen 10px hacia arriba */
+}
+
+/* Página de sala individual - Imágenes */
+.sala-images img {
+    width: 100%;
+    height: 25rem; 
+    object-fit: cover;
+    border-radius: 0.8rem; 
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.15); 
+    /* AÑADIR: Transición para un movimiento suave */
+    transition: transform 0.3s ease-in-out; 
+}
+
+.sala-images img:hover {
+    /* AÑADIR: Levanta la imagen ligeramente al pasar el ratón */
+    transform: translateY(-1rem); /* Mueve la imagen 10px hacia arriba */
 }
 
 /* CTA */
