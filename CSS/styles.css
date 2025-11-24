@@ -55,7 +55,7 @@ header {
 
 .logo img {
     /* Nuevo ajuste para el logo */
-    width: 6rem; /* De 5.5rem a 6rem (un poco más ancho) */
+    width: 7rem; /* De 5.5rem a 6rem (un poco más ancho) */
     height: auto; 
     filter: brightness(0) invert(1);
 }
