@@ -6,36 +6,33 @@
 }
 
 body {
-    /* STICKY FOOTER SETUP: Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana y usa Flexbox */
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
     
     font-family: 'Open Sans', Arial, sans-serif;
-    /* Base font size en rem (12px = 0.75rem, asumiendo 16px base) */
-    font-size: 0.75rem; 
+    font-size: 1vw; 
     line-height: 1.6;
     color: #333;
     background-color: #FFFFFF;
-    /* Mantenemos padding-top en px por la altura fija de los headers */
     padding-top: 150px; 
 }
 
 /* Header */
 header {
     background-color: #145214;
-    padding: 0.9375rem 0; /* 15px -> 0.9375rem */
+    padding: 1.25vw 0; 
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 5px -> rem */
+    box-shadow: 0 0.166vw 0.416vw rgba(0, 0, 0, 0.1); 
 }
 
 .header-container {
-    max-width: 75rem; /* 1200px -> 75rem */
+    max-width: 100vw; 
     margin: 0 auto;
-    padding: 0 1.25rem; /* 20px -> 1.25rem */
+    padding: 0 1.66vw; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,18 +41,18 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.625rem; /* 10px -> 0.625rem */
+    gap: 0.833vw; 
 }
 
 .logo img {
-    width: 3.75rem; /* 60px -> 3.75rem */
-    height: 3.75rem; /* 60px -> 3.75rem */
+    width: 5vw; 
+    height: 5vw; 
     filter: brightness(0) invert(1);
 }
 
 .logo-text {
     color: #FFFFFF;
-    font-size: 0.875rem; /* 14px -> 0.875rem */
+    font-size: 1.16vw; 
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -63,12 +60,12 @@ header {
 
 .user-menu {
     background-color: #FFFFFF;
-    padding: 0.5rem 0.9375rem; /* 8px 15px -> rem */
-    border-radius: 0.3125rem; /* 5px -> rem */
+    padding: 0.66vw 1.25vw; 
+    border-radius: 0.416vw; 
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* 8px -> 0.5rem */
+    gap: 0.66vw; 
 }
 
 .user-menu:hover {
@@ -78,21 +75,20 @@ header {
 /* Navegación */
 nav {
     background-color: #A8D5BA;
-    padding: 0.75rem 0; /* 12px -> 0.75rem */
+    padding: 1vw 0; 
     position: fixed;
-    /* top: 87px; -- Mantenemos px ya que depende directamente de la altura del header fijo */
     top: 87px; 
     width: 100%;
     z-index: 999;
 }
 
 .nav-container {
-    max-width: 75rem; /* 1200px -> 75rem */
+    max-width: 100vw; 
     margin: 0 auto;
-    padding: 0 1.25rem; /* 20px -> 1.25rem */
+    padding: 0 1.66vw; 
     display: flex;
     justify-content: center;
-    gap: 2.5rem; /* 40px -> 2.5rem */
+    gap: 3.33vw; 
     flex-wrap: wrap;
 }
 
@@ -100,11 +96,11 @@ nav a {
     color: #145214;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.8125rem; /* 13px -> 0.8125rem */
+    font-size: 1.08vw; 
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 0.5rem 0.9375rem; /* 8px 15px -> rem */
-    border-radius: 3px;
+    padding: 0.66vw 1.25vw; 
+    border-radius: 0.25vw; 
     transition: all 0.3s ease;
 }
 
@@ -115,58 +111,57 @@ nav a:hover {
 
 /* Contenedor principal */
 .main-container {
-    /* STICKY FOOTER COMPLEMENT: Asegura que el contenido principal ocupe todo el espacio sobrante */
     flex-grow: 1; 
 
-    max-width: 75rem; /* 1200px -> 75rem */
+    max-width: 100vw; 
     margin: 0 auto;
-    padding: 2.5rem 1.25rem; /* 40px 20px -> rem */
+    padding: 3.33vw 1.66vw; 
 }
 
 /* Seccion principal */
 .principal {
     text-align: center;
-    margin-bottom: 3.75rem; /* 60px -> 3.75rem */
+    margin-bottom: 5vw; 
 }
 
 .principal h1 {
-    font-size: 3rem; /* 48px -> 3rem */
+    font-size: 4vw; 
     font-weight: 700;
     color: #145214;
-    margin-bottom: 0.9375rem; /* 15px -> 0.9375rem */
+    margin-bottom: 1.25vw; 
     font-style: italic;
 }
 
 .principal h2 {
-    font-size: 1.75rem; /* 28px -> 1.75rem */
+    font-size: 2.33vw; 
     font-weight: 400;
     color: #333;
-    margin-bottom: 1.875rem; /* 30px -> 1.875rem */
+    margin-bottom: 2.5vw; 
     font-style: italic;
 }
 
 .principal-imagen {
     width: 100%;
-    max-width: 62.5rem; /* 1000px -> 62.5rem */
-    margin: 0 auto 1.875rem; /* 30px -> 1.875rem */
-    border-radius: 0.625rem; /* 10px -> 0.625rem */
-    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15); /* 4px 10px -> rem */
+    max-width: 83.33vw; 
+    margin: 0 auto 2.5vw; 
+    border-radius: 0.833vw; 
+    box-shadow: 0 0.33vw 0.833vw rgba(0, 0, 0, 0.15); 
 }
 
 .principal-imagen img {
     width: 100%;
     height: auto;
-    border-radius: 0.625rem; /* 10px -> 0.625rem */
+    border-radius: 0.833vw; 
 }
 
 /* Descripción */
 .descripcion {
     text-align: center;
-    font-size: 1rem; /* 16px -> 1rem */
+    font-size: 1.33vw; 
     line-height: 1.8;
     color: #333;
-    margin-bottom: 3.125rem; /* 50px -> 3.125rem */
-    max-width: 56.25rem; /* 900px -> 56.25rem */
+    margin-bottom: 4.16vw; 
+    max-width: 75vw; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -175,8 +170,8 @@ nav a:hover {
 .salas-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem; /* 40px -> 2.5rem */
-    margin-bottom: 3.75rem; /* 60px -> 3.75rem */
+    gap: 3.33vw; 
+    margin-bottom: 5vw; 
 }
 
 .sala-tarjeta {
@@ -185,7 +180,7 @@ nav a:hover {
 }
 
 .sala-tarjeta:hover {
-    transform: translateY(-0.3125rem); /* 5px -> rem */
+    transform: translateY(-0.416vw); 
 }
 
 .sala-tarjeta a {
@@ -194,15 +189,15 @@ nav a:hover {
 
 .sala-tarjeta img {
     width: 100%;
-    height: 18.75rem; /* 300px -> 18.75rem */
+    height: 25vw; 
     object-fit: cover;
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
-    box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15); /* 3px 8px -> rem */
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    border-radius: 0.66vw; 
+    box-shadow: 0 0.25vw 0.66vw rgba(0, 0, 0, 0.15); 
+    margin-bottom: 1.66vw; 
 }
 
 .sala-tarjeta h3 {
-    font-size: 1.375rem; /* 22px -> 1.375rem */
+    font-size: 1.83vw; 
     color: #145214;
     font-weight: 700;
     font-style: italic;
@@ -210,24 +205,24 @@ nav a:hover {
 
 /* Sección de eventos */
 .eventos-section {
-    margin-bottom: 3.75rem; /* 60px -> 3.75rem */
+    margin-bottom: 5vw; 
 }
 
 .eventos-section h2 {
     text-align: center;
-    font-size: 2rem; /* 32px -> 2rem */
+    font-size: 2.66vw; 
     color: #0c0c0c;
-    margin-bottom: 2.5rem; /* 40px -> 2.5rem */
+    margin-bottom: 3.33vw; 
     font-weight: 700;
 }
 
 .eventos-categoria {
-    margin-bottom: 3.125rem; /* 50px -> 3.125rem */
+    margin-bottom: 4.16vw; 
 }
 
 .eventos-categoria h3 {
     text-align:center;
-    font-size: 1.125rem; /* 18px -> 1.125rem */
+    font-size: 1.5vw; 
     margin-bottom: 5%;
     color: #0c0c0c;
     
@@ -236,55 +231,55 @@ nav a:hover {
 .eventos-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem; /* 20px -> 1.25rem */
+    gap: 1.66vw; 
 }
 
 .eventos-gallery img {
     width: 100%;
-    height: 15.625rem; /* 250px -> 15.625rem */
+    height: 20.83vw; 
     object-fit: cover;
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
-    box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15); /* 3px 8px -> rem */
+    border-radius: 0.66vw; 
+    box-shadow: 0 0.25vw 0.66vw rgba(0, 0, 0, 0.15); 
 }
 
 /* CTA */
 .cta-text{
     text-align: center;
-    font-size: 1.5625rem; /* 25px -> 1.5625rem */
+    font-size: 2.08vw; 
     font-style: italic;
     color: #0c0c0c;
     font-weight: 700;
-    margin-top: 3.125rem; /* 50px -> 3.125rem */
+    margin-top: 4.16vw; 
 }
 
 
 /* Página de sala individual */
 .sala-header {
     text-align: center;
-    margin-bottom: 2.5rem; /* 40px -> 2.5rem */
+    margin-bottom: 3.33vw; 
 }
 
 .sala-header h1 {
-    font-size: 2.625rem; /* 42px -> 2.625rem */
+    font-size: 3.5vw; 
     color: #145214;
     font-weight: 700;
     font-style: italic;
-    margin-bottom: 1.875rem; /* 30px -> 1.875rem */
+    margin-bottom: 2.5vw; 
 }
 
 .sala-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.9375rem; /* 15px -> 0.9375rem */
-    margin-bottom: 2.5rem; /* 40px -> 2.5rem */
+    gap: 1.25vw; 
+    margin-bottom: 3.33vw; 
 }
 
 .sala-images img {
     width: 100%;
-    height: 15.625rem; /* 250px -> 15.625rem */
+    height: 20.83vw; 
     object-fit: cover;
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
-    box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15); /* 3px 8px -> rem */
+    border-radius: 0.66vw; 
+    box-shadow: 0 0.25vw 0.66vw rgba(0, 0, 0, 0.15); 
 }
 
 .reserva-centro {
@@ -295,38 +290,38 @@ nav a:hover {
     display: inline-block;
     background-color: #145214;
     color: #FFFFFF;
-    padding: 0.9375rem 2.5rem; /* 15px 40px -> rem */
-    border-radius: 1.5625rem; /* 25px -> rem */
+    padding: 1.25vw 3.33vw; 
+    border-radius: 2.08vw; 
     text-decoration: none;
-    font-size: 1rem; /* 16px -> 1rem */
+    font-size: 1.33vw; 
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    margin: 1.875rem 0; /* 30px -> 1.875rem */
+    margin: 2.5vw 0; 
 }
 
 .reserva-button:hover {
     background-color: #0d3a0d;
-    transform: translateY(-0.125rem); /* 2px -> rem */
-    box-shadow: 0 0.3125rem 0.9375rem rgba(20, 82, 20, 0.3); /* 5px 15px -> rem */
+    transform: translateY(-0.166vw); 
+    box-shadow: 0 0.416vw 1.25vw rgba(20, 82, 20, 0.3); 
 }
 
 /* Información de sala */
 .sala-info {
     background-color: #f9f9f9;
-    padding: 1.875rem; /* 30px -> 1.875rem */
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    padding: 2.5vw; 
+    border-radius: 0.66vw; 
+    margin-bottom: 1.66vw; 
 }
 
 .info-item {
     display: flex;
     align-items: center;
-    gap: 0.9375rem; /* 15px -> 0.9375rem */
-    padding: 0.9375rem 0; /* 15px -> 0.9375rem */
+    gap: 1.25vw; 
+    padding: 1.25vw 0; 
     border-bottom: 1px solid #e0e0e0;
-    font-size: 0.875rem; /* 14px -> 0.875rem */
+    font-size: 1.16vw; 
 }
 
 .info-item:last-child {
@@ -334,15 +329,14 @@ nav a:hover {
 }
 
 .info-icon {
-    font-size: 1.25rem; /* 20px -> 1.25rem */
+    font-size: 1.66vw; 
     color: #145214;
 }
 
 .info-label {
     font-weight: 600;
     color: #145214;
-    /* Mantenemos un min-width alto para la etiqueta */
-    min-width: 200px; 
+    min-width: 16.66vw; 
 }
 
 .info-value {
@@ -352,71 +346,71 @@ nav a:hover {
 /* Plano de la sala */
 .sala-plano {
     text-align: center;
-    margin: 2.5rem 0; /* 40px -> 2.5rem */
+    margin: 3.33vw 0; 
 }
 
 .sala-plano img {
-    max-width: 37.5rem; /* 600px -> 37.5rem */
+    max-width: 50vw; 
     width: 100%;
     height: auto;
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
-    box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15); /* 3px 8px -> rem */
+    border-radius: 0.66vw; 
+    box-shadow: 0 0.25vw 0.66vw rgba(0, 0, 0, 0.15); 
 }
 
 /* Formulario de reservas */
 .reservas-container {
-    max-width: 43.75rem; /* 700px -> 43.75rem */
+    max-width: 58.33vw; 
     margin: 0 auto;
 }
 
 .reservas-container h1 {
     text-align: center;
-    font-size: 2.375rem; /* 38px -> 2.375rem */
+    font-size: 3.16vw; 
     color: #145214;
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    margin-bottom: 1.66vw; 
     font-style: italic;
 }
 
 .reservas-intro {
     text-align: center;
-    font-size: 0.875rem; /* 14px -> 0.875rem */
+    font-size: 1.16vw; 
     color: #666;
-    margin-bottom: 2.5rem; /* 40px -> 2.5rem */
+    margin-bottom: 3.33vw; 
 }
 
 .form-section {
-    margin-bottom: 2.1875rem; /* 35px -> 2.1875rem */
+    margin-bottom: 2.91vw; 
 }
 
 .form-section h2 {
-    font-size: 1.125rem; /* 18px -> 1.125rem */
+    font-size: 1.5vw; 
     font-weight: 700;
     color: #333;
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    margin-bottom: 1.66vw; 
     text-transform: uppercase;
 }
 
 .form-group {
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    margin-bottom: 1.66vw; 
 }
 
 .form-group label {
     display: block;
-    font-size: 0.875rem; /* 14px -> 0.875rem */
+    font-size: 1.16vw; 
     font-weight: 600;
     color: #333;
-    margin-bottom: 0.5rem; /* 8px -> 0.5rem */
+    margin-bottom: 0.66vw; 
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 0.75rem 0.9375rem; /* 12px 15px -> rem */
+    padding: 1vw 1.25vw; 
     border: none;
     background-color: #A8D5BA;
-    border-radius: 1.5625rem; /* 25px -> rem */
-    font-size: 0.875rem; /* 14px -> 0.875rem */
+    border-radius: 2.08vw; 
+    font-size: 1.16vw; 
     font-family: 'Open Sans', Arial, sans-serif;
     color: #333;
 }
@@ -424,25 +418,25 @@ nav a:hover {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    outline: 2px solid #145214;
+    outline: 0.166vw solid #145214; 
 }
 
 .form-group textarea {
     resize: vertical;
-    min-height: 5rem; /* 80px -> 5rem */
-    border-radius: 0.9375rem; /* 15px -> rem */
+    min-height: 6.66vw; 
+    border-radius: 1.25vw; 
 }
 
 .submit-button {
     display: block;
-    width: 12.5rem; /* 200px -> 12.5rem */
-    margin: 2.5rem auto 0; /* 40px -> 2.5rem */
+    width: 16.66vw; 
+    margin: 3.33vw auto 0; 
     background-color: #A8D5BA;
     color: #333;
-    padding: 0.9375rem 2.5rem; /* 15px 40px -> rem */
+    padding: 1.25vw 3.33vw; 
     border: none;
-    border-radius: 1.5625rem; /* 25px -> rem */
-    font-size: 1rem; /* 16px -> 1rem */
+    border-radius: 2.08vw; 
+    font-size: 1.33vw; 
     font-weight: 700;
     text-transform: capitalize;
     cursor: pointer;
@@ -452,38 +446,38 @@ nav a:hover {
 .submit-button:hover {
     background-color: #145214;
     color: #FFFFFF;
-    transform: translateY(-0.125rem); /* 2px -> rem */
+    transform: translateY(-0.166vw); 
 }
 
 /* Login */
 .login-container {
-    max-width: 25rem; /* 400px -> 25rem */
-    margin: 5rem auto; /* 80px -> 5rem */
-    padding: 2.5rem; /* 40px -> 2.5rem */
+    max-width: 33.33vw; 
+    margin: 6.66vw auto; 
+    padding: 3.33vw; 
     background-color: #f9f9f9;
-    border-radius: 0.625rem; /* 10px -> 0.625rem */
-    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1); /* 5px 15px -> rem */
+    border-radius: 0.833vw; 
+    box-shadow: 0 0.416vw 1.25vw rgba(0, 0, 0, 0.1); 
 }
 
 .login-container h1 {
     text-align: center;
-    font-size: 2rem; /* 32px -> 2rem */
+    font-size: 2.66vw; 
     color: #145214;
-    margin-bottom: 1.875rem; /* 30px -> 1.875rem */
+    margin-bottom: 2.5vw; 
 }
 
 .login-form .form-group {
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    margin-bottom: 1.66vw; 
 }
 
 .login-button {
     width: 100%;
     background-color: #145214;
     color: #FFFFFF;
-    padding: 0.75rem; /* 12px -> 0.75rem */
+    padding: 1vw; 
     border: none;
-    border-radius: 1.5625rem; /* 25px -> rem */
-    font-size: 1rem; /* 16px -> 1rem */
+    border-radius: 2.08vw; 
+    font-size: 1.33vw; 
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -496,39 +490,39 @@ nav a:hover {
 /* Footer */
 footer {
     background-color: #c0c0c0;
-    padding: 1.875rem 1.25rem; /* 30px 20px -> rem */
-    margin-top: auto; /* 7. Usa auto para que Flexbox lo empuje hacia abajo */
+    padding: 2.5vw 1.66vw; 
+    margin-top: auto; 
 }
 
 .footer-container {
-    max-width: 75rem; /* 1200px -> 75rem */
+    max-width: 100vw; 
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem; /* 40px -> 2.5rem */
+    gap: 3.33vw; 
     align-items: start;
 }
 
 .footer-section h3 {
-    font-size: 0.875rem; /* 14px -> 0.875rem */
+    font-size: 1.16vw; 
     font-weight: 700;
     color: #333;
-    margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+    margin-bottom: 0.833vw; 
     display: flex;
     align-items: center;
-    gap: 0.625rem; /* 10px -> 0.625rem */
+    gap: 0.833vw; 
 }
 
 .footer-section p {
-    font-size: 0.8125rem; /* 13px -> 0.8125rem */
+    font-size: 1.08vw; 
     color: #333;
     line-height: 1.6;
 }
 
 .footer-map {
     width: 100%;
-    height: 9.375rem; /* 150px -> 9.375rem */
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    height: 12.5vw; 
+    border-radius: 0.66vw; 
     overflow: hidden;
 }
 
@@ -539,15 +533,15 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 48rem) { /* 768px -> 48rem */
+@media (max-width: 64vw) { 
     .header-container {
         flex-direction: column;
-        gap: 0.9375rem; /* 15px -> rem */
+        gap: 1.25vw; 
     }
 
     .nav-container {
         flex-direction: column;
-        gap: 0.625rem; /* 10px -> rem */
+        gap: 0.833vw; 
     }
 
     .salas-grid {
@@ -566,21 +560,20 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* Ajuste de fuentes responsive a rem */
     .principal h1 {
-        font-size: 2rem; /* 32px -> 2rem */
+        font-size: 2.66vw; 
     }
 
     .principal h2 {
-        font-size: 1.25rem; /* 20px -> 1.25rem */
+        font-size: 1.66vw; 
     }
 }
 
-/* Prueba desplegable - Adaptando unidades a rem */
+/* Prueba desplegable */
 .info-item {
-    margin-bottom: 0.9375rem; /* 15px -> rem */
-    border: 0.125rem solid #145214; /* 2px -> rem */
-    border-radius: 0.5rem; /* 8px -> rem */
+    margin-bottom: 1.25vw; 
+    border: 0.166vw solid #145214; 
+    border-radius: 0.66vw; 
     overflow: hidden;
     background-color: white;
 }
@@ -588,43 +581,57 @@ footer {
 .info-header {
     display: flex;
     align-items: center;
-    padding: 0.9375rem 1.25rem; /* 15px 20px -> rem */
+    padding: 1.25vw 1.66vw; 
     background-color: #f8f8f8;
     cursor: pointer;
     transition: background-color 0.3s;
     list-style: none;
 }
 
+.info-header::-webkit-details-marker {
+    display: none;
+}
+
 .info-header::after {
     content: '▼';
     margin-left: auto;
-    font-size: 0.875rem; /* 14px -> rem */
+    font-size: 1.16vw; 
     color: #145214;
     transition: transform 0.3s;
 }
 
+.info-header:hover {
+    background-color: #e8f5e8;
+}
+
 .info-icon {
-    font-size: 1.5rem; /* 24px -> rem */
-    margin-right: 0.9375rem; /* 15px -> rem */
+    font-size: 2vw; 
+    margin-right: 1.25vw; 
 }
 
 .info-label {
     font-weight: 600;
     color: #145214;
-    font-size: 1rem; /* 16px -> rem */
+    font-size: 1.33vw; 
 }
 
 .info-content {
-    padding: 1.25rem; /* 20px -> rem */
+    padding: 1.66vw; 
     background-color: white;
 }
 
+.info-content p {
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
 .info-content ul {
-    margin: 0.625rem 0; /* 10px -> rem */
-    padding-left: 1.25rem; /* 20px -> rem */
+    margin: 0.833vw 0; 
+    padding-left: 1.66vw; 
 }
 
 .info-content ul li {
-    margin: 0.5rem 0; /* 8px -> rem */
+    margin: 0.66vw 0; 
     color: #333;
 }
