@@ -46,7 +46,7 @@ header {
 
 .logo img {
     width: 5vw; 
-    height: 5vw; 
+    height: auto; 
     filter: brightness(0) invert(1);
 }
 
