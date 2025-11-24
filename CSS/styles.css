@@ -326,16 +326,15 @@ nav a:hover {
 }
 
 .info-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem; 
-    padding: 1.5rem 0; 
-    border-bottom: 1px solid #e0e0e0;
-    font-size: 1.4rem; 
+    margin-bottom: 1.5rem; 
+    border: 0.2rem solid #145214; 
+    border-radius: 0.8rem; 
+    background-color: white;
 }
 
 .info-item:last-child {
-    border-bottom: none;
+    margin-bottom: 0.5rem; 
+    padding-bottom: 0.2rem;
 }
 
 .info-icon {
