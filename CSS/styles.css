@@ -331,6 +331,97 @@ nav a:hover {
   line-height: 1.6;
 }
 
+.sala-plano {
+  text-align: center;
+  margin: 4rem 0;
+}
+.sala-plano img {
+  max-width: 60rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.15);
+}
+
+.reservas-container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.reservas-container h1 {
+  text-align: center;
+  font-size: 3.8rem;
+  color: #145214;
+  margin-bottom: 2rem;
+}
+.reservas-container .reservas-intro {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 4rem;
+}
+.reservas-container .form-section {
+  margin-bottom: 3.5rem;
+}
+.reservas-container .form-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.reservas-container .form-group {
+  margin-bottom: 2rem;
+}
+.reservas-container .form-group label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+.reservas-container .form-group input,
+.reservas-container .form-group select,
+.reservas-container .form-group textarea {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  border: none;
+  background-color: #A8D5BA;
+  border-radius: 2.5rem;
+  font-size: 1.4rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #333;
+}
+.reservas-container .form-group input:focus,
+.reservas-container .form-group select:focus,
+.reservas-container .form-group textarea:focus {
+  outline: 0.2rem solid #0d3a0d;
+}
+.reservas-container .form-group textarea {
+  resize: vertical;
+  min-height: 8rem;
+  border-radius: 1.5rem;
+}
+.reservas-container .submit-button {
+  display: block;
+  width: 20rem;
+  margin: 4rem auto 0;
+  background-color: #A8D5BA;
+  color: #333;
+  padding: 1.5rem 4rem;
+  border: none;
+  border-radius: 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.reservas-container .submit-button:hover {
+  background-color: #145214;
+  color: #FFFFFF;
+  transform: translateY(-0.2rem);
+}
+
 .login-container {
   max-width: 40rem;
   margin: 8rem auto;
@@ -347,6 +438,26 @@ nav a:hover {
 }
 .login-container .login-form .form-group {
   margin-bottom: 2rem;
+}
+.login-container .login-form .form-group label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+.login-container .login-form .form-group input {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  border: none;
+  background-color: #A8D5BA;
+  border-radius: 2.5rem;
+  font-size: 1.4rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #333;
+}
+.login-container .login-form .form-group input:focus {
+  outline: 0.2rem solid #0d3a0d;
 }
 .login-container .login-button {
   width: 100%;
