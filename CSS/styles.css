@@ -41,8 +41,8 @@ header {
 }
 
 .logo img {
-    width: 70px;
-    height: auto;
+    width: 60px;
+    height: 60px;
     filter: brightness(0) invert(1);
 }
 
