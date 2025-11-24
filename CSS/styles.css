@@ -563,7 +563,7 @@ footer {
     height: 100%;
     object-fit: cover;
     /* AÑADIR MARCO SUTIL */
-    border: 0.1rem solid #999999; /* 1px sólido de gris claro */
+    border: 1rem solid #999999; /* 1px sólido de gris claro */
     padding: 0.2rem; /* 2px de padding interior para que el marco no toque los bordes */
 }
 
