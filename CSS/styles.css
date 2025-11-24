@@ -276,6 +276,10 @@ nav a:hover {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
+.reserva-centro {
+    text-align: center;
+}
+
 .reserva-button {
     display: inline-block;
     background-color: #145214;
