@@ -11,13 +11,13 @@ const cors = require('cors');
 
 // Importar rutas
 const eventosRoutes = require('./src/routes/Eventos.routes');
+const authRoutes = require('./src/routes/Auth.routes');
 
 // Importar middlewares personalizados
 const { logPeticiones } = require('./src/middlewares/Auth.middleware');
 
 // Inicializar la aplicación Express
 const app = express();
-
 // Puerto del servidor (toma el del .env o usa 3000 por defecto)
 const PORT = process.env.PORT || 3000;
 
@@ -27,8 +27,9 @@ const PORT = process.env.PORT || 3000;
 
 // CORS: Permite que el frontend Angular se comunique con el backend
 // Por defecto permite peticiones desde http://localhost:4200
+// CORS: Permite múltiples orígenes para desarrollo
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:4200',
+    origin: ['http://localhost:4200', 'http://127.0.0.1:5500', 'http://localhost:5500'],
     credentials: true
 }));
 
@@ -79,6 +80,9 @@ app.post('/api/ejemplo', (req, res) => {
 // ============================================
 // RUTAS DE LA API
 // ============================================
+
+// Rutas de autenticación - /api/auth/*
+app.use('/api/auth', authRoutes);
 
 // Rutas de eventos - Todas las rutas empiezan con /api/eventos
 app.use('/api/eventos', eventosRoutes);

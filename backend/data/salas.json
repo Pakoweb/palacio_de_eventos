@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "nombre": "Sala Jardín",
+    "capacidad_min": 100,
+    "capacidad_max": 450,
+    "descripcion": "Amplio espacio con vistas al jardín, ideal para bodas y eventos grandes",
+    "precio_base": 2500.00,
+    "caracteristicas": [
+      "Aire acondicionado",
+      "Sistema de sonido profesional",
+      "Iluminación LED",
+      "Acceso al jardín",
+      "Cocina industrial"
+    ],
+    "imagen_url": "/assets/images/sala-jardin.jpg",
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "nombre": "Sala Real",
+    "capacidad_min": 200,
+    "capacidad_max": 800,
+    "descripcion": "La sala más grande del palacio, perfecta para grandes celebraciones",
+    "precio_base": 3500.00,
+    "caracteristicas": [
+      "Escenario profesional",
+      "Sistema audiovisual completo",
+      "Decoración clásica",
+      "Zona VIP",
+      "Parking privado"
+    ],
+    "imagen_url": "/assets/images/sala-real.jpg",
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "nombre": "Sala Modernista",
+    "capacidad_min": 50,
+    "capacidad_max": 200,
+    "descripcion": "Diseño contemporáneo para eventos corporativos y celebraciones íntimas",
+    "precio_base": 1500.00,
+    "caracteristicas": [
+      "Diseño moderno",
+      "Proyector y pantalla",
+      "Wi-Fi de alta velocidad",
+      "Catering incluido",
+      "Zona de networking"
+    ],
+    "imagen_url": "/assets/images/sala-modernista.jpg",
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "nombre": "Sala Escénica",
+    "capacidad_min": 10,
+    "capacidad_max": 50,
+    "descripcion": "Espacio íntimo para reuniones y eventos pequeños",
+    "precio_base": 800.00,
+    "caracteristicas": [
+      "Ambiente acogedor",
+      "Sistema de sonido",
+      "Iluminación regulable",
+      "Terraza privada",
+      "Catering personalizado"
+    ],
+    "imagen_url": "/assets/images/sala-escenica.jpg",
+    "disponible": true
+  }
+]

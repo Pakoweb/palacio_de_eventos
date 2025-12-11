@@ -1,0 +1,110 @@
+// _login-messages.scss
+// Estilos para los mensajes del sistema de login
+
+// ============================================
+// MENSAJES DE LOGIN
+// ============================================
+
+.mensaje-login {
+    padding: $espacio-s;
+    margin-bottom: $espacio-m;
+    border-radius: $radio-default;
+    font-size: 1.4rem;
+    text-align: center;
+    display: none;
+    animation: slideDown 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+// Mensaje de error (rojo)
+.mensaje-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 0.2rem solid #ef5350;
+}
+
+// Mensaje de éxito (verde)
+.mensaje-success {
+    background-color: lighten($color-secundario, 15%);
+    color: darken($color-primario, 5%);
+    border: 0.2rem solid $color-primario;
+}
+
+// Mensaje informativo (azul)
+.mensaje-info {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border: 0.2rem solid #42a5f5;
+}
+
+// Animación de entrada del mensaje
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// ============================================
+// MEJORAS AL BOTÓN DE LOGIN (opcional)
+// ============================================
+
+.login-button {
+    width: 100%;
+    background-color: $color-primario;
+    color: $color-fondo-claro;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: $transicion-default;
+
+    &:hover {
+        background-color: $color-focus-outline;
+        transform: translateY(-0.2rem);
+        box-shadow: 0 0.5rem 1.5rem rgba(20, 82, 20, 0.3);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    // Estado deshabilitado (durante carga)
+    &:disabled {
+        background-color: lighten($color-gris-footer, 10%);
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+
+        &:hover {
+            background-color: lighten($color-gris-footer, 10%);
+        }
+    }
+}
+
+// ============================================
+// SPINNER DE CARGA (opcional - para cuando hace login)
+// ============================================
+
+.login-loading {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: $espacio-xs;
+    border: 0.2rem solid $color-fondo-claro;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
